@@ -82,16 +82,13 @@ padding-bottom: 30px;
 margin-right: 46px;
 }
 
-.header-email {
-margin-right: 50px;
-}
-
 .topline {
 display: flex;
-align-items: center;
 }
 
 .logo {
+display: flex;
+align-items: center;
 text-decoration: none;
 font-family: Raleway;
 font-style: normal;
@@ -132,6 +129,10 @@ line-height: 16px;
 letter-spacing: 0.02em;
 }
 
+.navigation-list-link:link {
+color: black;
+}
+
 .navigation-list-link:visited {
 color: black;
 }
@@ -140,48 +141,7 @@ color: black;
 color:#2196F3;
 }
 
-.header-contacts {
-display: flex;
-margin-left: auto;
-align-items: center;
-justify-content: center;
-color: #757575;
-fill: #757575;
-}
-
-.header-contacts:focus,
-.header-contacts:hover {
-cursor: pointer;
-color:#2196F3;
-fill: #2196F3;
-}
-
 .header-phonenumber {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-
-}
-
-.header-email::before {
-content: url(/images/envelopeSVG.svg);
-}
-
-.header-phonenumber::before {
-content: url(/images/smartphoneSVG.svg);
-}
-
-.header-email-link:link,
-.header-email-link:hover,
-.header-email-link:active,
-.header-email-link:visited {
-text-decoration: none;
-}
-
-.header-email {
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -197,11 +157,78 @@ letter-spacing: 0.02em;
 text-decoration: none;
 }
 
-/* ------- Section Header End ------- */
+.header-phonenumber-link:link {
+color:#757575;
+}
 
+.header-phonenumber-link:hover {
+color:#2196F3;
+}
+
+.header-phonenumber::before {
+content: url(/images/smartphoneSVG.svg);
+}
+
+.header-email {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+margin-right: 50px;
+}
+
+.header-email-link:link,
+.header-email-link:hover,
+.header-email-link:active,
+.header-email-link:visited {
+text-decoration: none;
+}
+
+.header-email-link:link {
+color:#757575;
+}
+
+.header-email-link:hover {
+color:#2196F3;
+}
+
+.header-email::before {
+content: url(/images/envelopeSVG.svg);
+}
+
+.header-contacts {
+display: flex;
+align-items: center;
+margin-left: auto;
+}
+
+.header-contacts:focus,
+.header-contacts:hover {
+cursor: pointer;
+}
+
+/* ------- Section Header End ------- */
 
 /* ------- Section Index ------- */
 
+.title2 {
+display: flex;
+justify-content: center;
+padding-top: 94px;
+padding-bottom: 50px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+/* ------- Section Solutions ------- */
 
 .solutions .container {
 display: flex;
@@ -259,6 +286,10 @@ border: none;
 color: #FFFFFF;
 }
 
+/* ------- Section Solutions End ------- */
+
+/* ------- Section Pros ------- */
+
 .pros .container{
 display: flex;
 }
@@ -267,10 +298,23 @@ display: flex;
 display: flex;
 align-items: center;
 justify-content: space-between;
+padding-top: 94px;
+}
+
+.grey-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 270px;
+height: 120px;
+left: 215px;
+top: 774px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
 }
 
 .pros-list-item-title {
-padding-top: 94px;
 padding-bottom: 10px;
 font-family: Roboto;
 font-style: normal;
@@ -292,20 +336,9 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.title2 {
-display: flex;
-justify-content: center;
-padding-top: 94px;
-padding-bottom: 50px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-}
+/* ------- Section Pros End ------- */
+
+/* ------- Section What We Do ------- */
 
 .whatwedo .whatwedo-div .container{
 display: flex;
@@ -322,6 +355,10 @@ margin-right: 30px;
 .whatwedo-img {
 margin-bottom: 94px;
 }
+
+/* ------- Section What We Do End ------- */
+
+/* ------- Section Team ------- */
 
 .team .ourteam .container{
 display: flex;
@@ -399,6 +436,8 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
+/* ------- Section Team End ------- */
+
 /* ------- Section Index End ------- */
 
 /* ------- Section Portfolio-Filters ------- */
@@ -438,6 +477,7 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 background-color: #2196F3;
 }
+
 /* ------- Section Portfolio-Filters End ------- */
 
 /* ------- Section Portfolio ------- */
@@ -492,6 +532,47 @@ color: #757575;
 
 /* ------- Section Portfolio End ------- */
 
+/* ------- Section Our Clients ------- */
+
+.ourclients .container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.ourclients-div {
+display: flex;
+}
+
+.ourclients-list {
+display: flex;
+align-items: center;
+padding-bottom: 94px;
+}
+
+.ourclients-list-item {
+padding: 15px 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.ourclients-link:not(:last-child) {
+margin-right: 30px;
+}
+
+.ourclients-link:hover {
+fill: #2196F3;
+color: #2196F3;
+}
+
+
+/* ------- Section Our Clients End ------- */
+
 /* ------- Section Footer ------- */
 
 .footer {
@@ -520,9 +601,11 @@ color: #FFFFFF;
 }
 
 .address {
+    display: flex;
 padding-bottom: 60px;
-align-items: center;
+flex-wrap: wrap;
 }
+
 
 .address-list {
 list-style: none;
@@ -565,6 +648,53 @@ color: rgba(255, 255, 255, 0.6);
 .address-phonenumber:visited {
 text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
+}
+
+.joinus-title {
+padding-bottom: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.joinus {
+width: 206px;
+height: 80px;
+margin-left: 70px;
+margin-top: -23px;
+}
+
+.joinus-social-list {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.joinus-social-icon {
+width: 20px;
+height: 20px;
+}
+
+.joinus-social-list-link {
+display: flex;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+fill: #AFB1B8;
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+.joinus-social-list-link:hover,
+.joinus-social-list-link:focus {
+fill: #FFFFFF;
+background-color: #2196F3;
 }
 
 /* ------- Section Footer End ------- */
