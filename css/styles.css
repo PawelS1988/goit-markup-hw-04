@@ -84,6 +84,8 @@ margin-right: 46px;
 
 .topline {
 display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .logo {
@@ -166,7 +168,7 @@ color:#2196F3;
 }
 
 .header-phonenumber::before {
-content: url(/images/smartphoneSVG.svg);
+content: url(../images/smartphoneSVG.svg);
 }
 
 .header-email {
@@ -195,12 +197,11 @@ color:#2196F3;
 }
 
 .header-email::before {
-content: url(/images/envelopeSVG.svg);
+content: url(../images/envelopeSVG.svg);
 }
 
 .header-contacts {
 display: flex;
-align-items: center;
 margin-left: auto;
 }
 
