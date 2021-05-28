@@ -85,7 +85,6 @@ margin-right: 46px;
 .topline {
 display: flex;
 align-items: center;
-justify-content: center;
 }
 
 .logo {
@@ -208,14 +207,15 @@ color:#757575;
 color:#2196F3;
 }
 
-.header-contacts {
+/* .header-contacts {
 display: flex;
+justify-content: flex-end;
 }
 
 .header-contacts:focus,
 .header-contacts:hover {
 cursor: pointer;
-}
+} */
 
 /* ------- Section Header End ------- */
 
@@ -560,10 +560,6 @@ height: 60px;
 .ourclients-list {
 display: flex;
 padding-bottom: 94px;
-}
-
-.ourclients-list-item {
-
 }
 
 .ourclients-list-link {
