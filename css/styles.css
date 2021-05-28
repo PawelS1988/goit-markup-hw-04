@@ -85,6 +85,7 @@ margin-right: 46px;
 .topline {
 display: flex;
 align-items: center;
+width: 100%;
 }
 
 .logo {
@@ -182,6 +183,7 @@ margin-right: 10px;
 .header-email {
 display: flex;
 align-items: center;
+margin-left: auto;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
